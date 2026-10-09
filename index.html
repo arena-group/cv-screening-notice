@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How we use your application</title>
+<style>
+  :root {
+    --ink: #1a1d1f;
+    --paper: #fbfaf8;
+    --line: #dcd7cf;
+    --accent: #2f5d50;
+    --muted: #6b6560;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: inherit; }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #ece9e4;
+      --paper: #17191a;
+      --line: #35393a;
+      --accent: #7fb9a6;
+      --muted: #9a9590;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ece9e4;
+    --paper: #17191a;
+    --line: #35393a;
+    --accent: #7fb9a6;
+    --muted: #9a9590;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    margin: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.15;
+    margin: 0 0 32px;
+    font-weight: 600;
+    max-width: 18ch;
+  }
+
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 36px 0 10px;
+  }
+
+  p { margin: 0 0 16px; max-width: 62ch; }
+  ul { margin: 0 0 16px; padding-left: 1.2em; }
+  li { margin-bottom: 6px; max-width: 58ch; }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 40px 0;
+  }
+
+  .meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 48px;
+  }
+
+  a { color: var(--accent); }
+
+  .contact-box {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 18px 20px;
+    margin: 28px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+  }
+  .contact-box a { font-weight: 600; text-decoration: none; }
+  .contact-box a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Candidate information</p>
+    <h1>How we use your application</h1>
+
+    <p>AMEA, part of the Arena Group, will use the information in your CV and application to assess you for this role. An AI tool, run centrally for the group, helps us match applications against the requirements of the role and sort them for review.</p>
+
+    <p>We aim for a recruiter to review every outcome. If the number of applications means yours is not taken forward without a person reviewing it, we will tell you, and you can ask for a person to review the decision, give us your views, and challenge it.</p>
+
+    <p>Your CV is not used to train the AI tool. Your application is stored on Microsoft systems in the European Union and may be shared with other group companies involved in the vacancy, including in the UAE and Saudi Arabia, under legal safeguards. We keep unsuccessful applications for six months.</p>
+
+    <h2>Your rights</h2>
+    <p>You have rights over your information, including the right to access it, correct it, and object to its use. You can also ask for a clear explanation of the role the AI tool played in any decision.</p>
+
+    <div class="contact-box">
+      To use any of these rights, or for more detail on how your information is handled, email <a href="mailto:hr.me@arenagroup.com">hr.me@arenagroup.com</a>.
+    </div>
+
+    <hr class="divider">
+
+    <p class="meta">Arena Group · Candidate privacy notice (short form) · Published 9 October 2026</p>
+  </div>
+</body>
+</html>
