@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How we use your application</title>
+<style>
+  :root {
+    --ink: #1c2126; --paper: #fcfcfb; --rule: #d8dcd9; --accent: #1d5560; --muted: #5e676d; --band: #f1f4f3;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ink: #e6e9e8; --paper: #14181b; --rule: #343b3f; --accent: #7cc3cf; --muted: #9aa3a8; --band: #1c2226; }
+  }
+  :root[data-theme="dark"] { --ink: #e6e9e8; --paper: #14181b; --rule: #343b3f; --accent: #7cc3cf; --muted: #9aa3a8; --band: #1c2226; }
+  * { box-sizing: inherit; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif; font-size: 17px; line-height: 1.65; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 48px 22px 80px; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .eyebrow { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+  h1 { font-size: clamp(28px, 5vw, 36px); line-height: 1.15; margin: 0 0 24px; font-weight: 700; letter-spacing: -0.01em; }
+  h2 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 20px; margin: 40px 0 12px; font-weight: 650; }
+  p { margin: 0 0 16px; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .full { border-left: 4px solid var(--accent); background: var(--band); padding: 14px 18px; margin: 0 0 28px; border-radius: 0 4px 4px 0; }
+  .full p { margin: 0; }
+  .full a { font-weight: 650; }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--rule); color: var(--muted);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Candidate information</p>
+  <h1>How we use your application</h1>
+
+  <div class="full">
+    <p>This role uses AI-assisted CV screening. Please read our <a href="https://arena-group.github.io/cv-screening-notice/full-notice/">full candidate privacy notice</a> before you apply.</p>
+  </div>
+
+  <p>AMEA, part of the Arena Group, will use the information in your CV and application to assess you for this role. An AI tool, run centrally for the group, helps us match applications against the requirements of the role and sort them for review.</p>
+  <p>We aim for a recruiter to review every outcome. If the number of applications means yours is not taken forward without a person reviewing it, we will tell you, and you can ask for a person to review the decision, give us your views, and challenge it.</p>
+  <p>Your CV is not used to train the AI tool. Your application is stored on Microsoft systems in the European Union and may be shared with other group companies involved in the vacancy, including in the UAE and Saudi Arabia. We keep unsuccessful applications for six months after we receive them.</p>
+
+  <h2>Your rights</h2>
+  <p>You have rights over your information, including the right to access it, correct it, and object to its use. You can also ask for a clear explanation of the role the AI tool played in any decision.</p>
+  <p>To use any of these rights, or for more detail on how your information is handled, read the <a href="https://arena-group.github.io/cv-screening-notice/full-notice/">full notice</a> or email <a href="mailto:hr.me@arenagroup.com">hr.me@arenagroup.com</a>.</p>
+
+  <footer>Arena Group · Candidate privacy notice (short form) · Updated 15 October 2026</footer>
+</div>
+</body>
+</html>
